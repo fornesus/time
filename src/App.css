@@ -1,44 +1,143 @@
-main {
-  align-content: center;
-  box-sizing: border-box;
-  display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  hyphens: auto;
-  line-height: 1.65;
-  margin: 0 auto;
-  max-width: 680px;
-  min-height: 100vh;
-  padding: 72px 0;
+.App {
   text-align: center;
+  vertical-align: center;
+  width: 100%;
+  position: absolute;
 }
-h1 {
-  font-size: 45px;
+
+/*  The .App-logo element is not currently in use:
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
 }
-h2 {
-  margin-top: 1.5em;
+
+*/
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-shadow: 0.1em 0.1em black;
 }
-p {
-  font-size: 16px;
-}
-a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
-  cursor: pointer;
+
+  .current-time {
+    line-height: 1em;
+  }
+
+.App-link {
+  color: white;
+  background-color: rgba(40, 44, 52, 0.5);
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1.25em;
   text-decoration: none;
-  transition: all 0.2s ease;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  display: inline;
 }
-a:hover {
-  border-bottom: 1px solid #0076ff;
+
+  /* When an App-link class element is hovered over: */
+  .App-link:hover {
+    background-color: rgba(251, 215, 97, 0.5);
+    border: solid 1px rgba(251, 215, 97, 0.5);
+  }
+
+  /* Hide an element with this class by default */
+  .hidden {
+    display: none;
+  }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-code,
-pre {
-  color: #d400ff;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 0.92em;
+
+@media only screen and (max-width: 379px){
+  .App {
+    top: 0;
+    bottom: 10vh;
+  }
+  .current-time {
+    font-size: 2em;
+  }
+  .hidden {
+    display: inline;
+  }
+
+  .App-link {
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+  }
+
+  #links {
+    margin-top: 2em;
+  }
 }
-code:before,
-code:after {
-  content: '\`';
+
+@media only screen and (min-width: 380px) and (max-width: 599px){
+  .App {
+    top: 0;
+    bottom: 10vh;
+  }
+  .current-time {
+    font-size: 2em;
+  }
+  .hidden {
+    display: inline;
+  }
+
+  .App-link {
+    font-size: 1.5em;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em;
+    line-height: 1.5em;
+  }
+
+  #links {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px){
+  .App {
+    top: 10vh;
+    bottom: 10vh;
+  }
+
+  .current-time {
+    font-size: 2em;
+  }
+
+  #links {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 800px){
+  .App {
+    top: 15vh;
+    bottom: 15vh;
+  }
+
+  .current-time {
+    font-size: 2em;
+  }
+
+  #links {
+    margin-top: 2em;
+  }
 }

@@ -6,9 +6,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  line-height: 15vh;
+  /* This is the background image, with a default background-color in the case that it cannot load and the default centered position */
+  background: url('background.jpg');
+  background-color: #282c34;
+  background-position: center center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+footer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  color: white;
+  padding: 0.5em;
+  line-height: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+  /* Ensure that the footer links only present with an underline on hover and are, otherwise, set to inherit the footer font styles */
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+@media only screen and (min-width: 600px){
+  footer {
+    display: block;
+    padding: 1em;
+  }
 }
