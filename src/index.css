@@ -20,7 +20,9 @@ code {
 }
 
 footer {
+  /* The default display is none for mobile devices */
   display: none;
+
   position: fixed;
   bottom: 0;
   right: 0;
