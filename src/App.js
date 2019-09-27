@@ -23,10 +23,10 @@ class App extends Component {
           {/* <CurrentTime /> refers to the CurrentTime component and displays the current time in the 24-hour and standard formats */}
           <CurrentTime />
         </header>
-        <navigation>
+        <nav>
           {/* <Links /> refers to the Links component and displays pertinent links */}
           <Links />
-        </navigation>
+        </nav>
       </div>
     );
   }
