@@ -22,7 +22,13 @@ class Footer extends React.Component {
 
   // Render the footer with the year state
   render(){
-    return '<span><a href="https://www.fornesa.design" target="_blank" rel="noopener noreferrer">Chris Fornesa</a> &copy; {this.state.year} || <a href="https://time.php.fornesa.design">PHP</a> || <a href="https://time.django.fornesa.design">Django</a></span>';
+    return (
+    	<span>
+    		<a href="https://www.fornesa.design" target="_blank" rel="noopener noreferrer">Chris Fornesa</a> &copy; {this.state.year} 
+    		|| <a href='https://time.php.fornesa.design'>PHP</a> || 
+    		<a href="https://time.django.fornesa.design">Django</a>
+    	</span>
+    );
   }
 }
 
